@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+<div class="container py-4">
+    <div class="card">
+        <img src="<%=campground.image%>" class="card-image-top">
+        <div class="card-body">
+            <h1><%=campground.name%></h1>
+            <p><%=campground.description%></p>
+            <p class="text-center">
+            <a href="/campgrounds">Go back</a>
+            </p>
+            <p>
+            <a href="/campgrounds/<%=campground._id%>/edit" class="btn btn-warning">Edit</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer %>
