@@ -29,7 +29,7 @@ router.post('/login', passport.authenticate('local', {
 // Logout
 router.get('/logout', (req, res)=>{
     req.logout();
-    res.redirect('/campgrounds');
+    res.redirect('back');
 });
 
 function isLoggedIn(req, res, next){
