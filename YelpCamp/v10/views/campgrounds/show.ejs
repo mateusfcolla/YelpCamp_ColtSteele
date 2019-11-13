@@ -49,6 +49,16 @@
                             </div>
                         </div>
                                 <p class="py-3"><%=comment.text%></p>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-start">
+                                            <a href="/campgrounds/<%=campground._id%>/comments/<%=comment._id%>/edit" class="btn btn-sm btn-warning">Edit</a>
+                                            <form action="/campgrounds/<%=campground._id%>/comments/<%=comment._id%>?_method=DELETE" method="post">
+                                            <button class="btn btn-sm btn-danger ml-2">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </form>
                         </div>
                     </div>
                 <%})%>
