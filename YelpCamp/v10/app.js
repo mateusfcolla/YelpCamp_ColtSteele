@@ -1,4 +1,4 @@
-    const express            = require('express'),
+    const express        = require('express'),
       bodyParser         = require('body-parser'),
       mongoose           = require('mongoose'),
       expressSanitizer   = require('express-sanitizer'),
@@ -47,4 +47,4 @@ app.get('/', (req, res) =>{
 
 app.listen(3000, ()=>{
     console.log('YelpCamp Server has Started!');
-})
+});
